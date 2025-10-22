@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Contacts from "../components/Table/Contacts";
-import Filter from "../components/Filter";
 
 const Home = ({setId}) => {
   const [filterType, setFilterType] = useState("name"); // Default filter type

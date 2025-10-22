@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { PersonContext } from "../../contexts/PersonContext";
 import { useFormUpdate } from "../../hooks/useFormUpdate";
 import { usePUT } from "../../hooks/usePUT";
-import { BASE_URL } from "../../js/config";
+import { BASE_URL } from "../../api/config";
 import Message from "./Message";
 
 const UpdateForm = ({ id }) => {

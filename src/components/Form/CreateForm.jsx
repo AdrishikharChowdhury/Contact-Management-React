@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { usePost } from "../../hooks/usePost";
-import { BASE_URL } from "../../js/config";
+import { BASE_URL } from "../../api/config";
 import { PersonContext } from "../../contexts/PersonContext";
 import { CircleUserRound, Plus } from "lucide-react";
 import { useForm } from "../../hooks/useForm";
