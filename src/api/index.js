@@ -2,8 +2,32 @@ import express from "express";
 import fs from "fs";
 import cors from "cors";
 
-const app = express();
 const filePath = "../data/contacts.json";
+
+const loadFiles = () => {
+  if (!fs.existsSync(filePath)) {
+    fs.writeFileSync(
+      filePath,
+      `[
+  {
+    "id": "a7f0b1c2-3d4e-5678-9abc-def012345678",
+    "name": "Senku Ishigami",
+    "phone": "+81-90-1234-5678",
+    "email": "senku.ishigami@drstone.world",
+    "company": "Kingdom of Science",
+    "createdAt": "10/21/2025"
+  }
+]
+`,
+      { encoding: "utf-8" }
+    );
+  }
+};
+
+// Loads the contacts.json with required data;
+loadFiles();
+
+const app = express();
 
 app.use(express.json());
 app.use(cors());

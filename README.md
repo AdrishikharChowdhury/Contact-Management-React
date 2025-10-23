@@ -67,14 +67,15 @@ Once the application is live, here's how you can interact with it:
 ## 📂 Folder Structure
 
 ```
-.env
 .gitignore
 eslint.config.js
 index.html
+LICENSE
 package-lock.json
 package.json
 README.md
 vite.config.js
+.git/...
 node_modules/...
 public/
 │   └───vite.svg
@@ -82,26 +83,28 @@ public/
     ├───App.jsx
     ├───index.css
     ├───main.jsx
+    ├───api/
+    │   ├───config.js
+    │   └───index.js
     ├───assets/
     │   └───react.svg
     ├───components/
-    │   ├───CreateForm.jsx
+    │   ├───Filter.jsx
     │   ├───Navbar.jsx
+    │   ├───Form/
+    │   │   ├───CreateForm.jsx
+    │   │   ├───Message.jsx
+    │   │   └───UpdateForm.jsx
     │   └───Table/
     │       ├───Contacts.jsx
     │       ├───ContactSlider.jsx
     │       ├───TableFoot.jsx
     │       ├───TableHead.jsx
     │       └───ThreeDots.jsx
-    │   └───Form/
-    │       ├───UpdateForm.jsx
-    │       └───Message.jsx
-    │   └───Filter.jsx
     ├───contexts/
     │   ├───ContactContext.jsx
     │   └───PersonContext.jsx
     ├───data/
-    │   └───contacts.json
     ├───hooks/
     │   ├───useDELETE.jsx
     │   ├───useFetch.jsx
@@ -109,13 +112,11 @@ public/
     │   ├───useFormUpdate.jsx
     │   ├───usePost.jsx
     │   └───usePUT.jsx
-    ├───js/
-    │   ├───config.js
-    │   └───index.js
     └───pages/
-        ├───CreateContact.jsx
         ├───Home.jsx
-        └───UpdateContact.jsx
+        └───Create/
+            ├───CreateContact.jsx
+            └───UpdateContact.jsx
 ```
 
 ## 🧑‍💻 Author

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Ellipsis } from "lucide-react";
 import { PersonContext } from "../../contexts/PersonContext";
-import { BASE_URL } from "../../js/config";
+import { BASE_URL } from "../../api/config";
 import { useDELETE } from "../../hooks/useDELETE";
 import { Link } from "react-router-dom";
 
