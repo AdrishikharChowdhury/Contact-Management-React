@@ -23,4 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .env
-/home/rishi/Downloads/My WorkSpace/Contact Management/src/data/contacts.json
+
+# Local data
+src/data/contacts.json
